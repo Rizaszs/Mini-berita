@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini-berita</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="items-center justify-between py-4 px-16 bg-gray-100 text-gray-500 hover:text-gray-700 focus:text-gray-700 shadow-lg"
+      >
+        <div class="grid grid-cols-2">
+          <div class="col-span-2 md:col-span-1">
+            <div class="flex items-center justify-center">
+              <a
+                class="flex items-center text-gray-900 hover:text-gray-900 focus:text-gray-900 mt-2"
+                href="#"
+              >
+                <svg
+                  class="fill-current h-13 w-13 mr-3 fill-red-500"
+                  width="54"
+                  height="54"
+                  viewBox="0 0 54 54"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"
+                  />
+                </svg>
+                <span class="text-2xl md:text-3xl font-mono">M-ini berita</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-span-2 md:col-span-1">
+            <div class="flex items-center justify-center m-3">
+              <div class="flex border-2 rounded-full">
+                <input
+                  type="search"
+                  class="rounded-full px-4 py-2 w-80 input-keyword"
+                  placeholder="Search..."
+                />
+                <button
+                  class="flex items-center justify-center px-4 search-button"
+                >
+                  <svg
+                    class="w-6 h-6 text-gray-600"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main content -->
+    <center class="grid grid-cols-4 gap-3 my-6 mx-6" id="data"></center>
+    <script type="module" src="./promise.js"></script>
+  </body>
+</html>
